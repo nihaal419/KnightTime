@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lpE-FY-2gN">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="136" height="72.5" alignment="left" text="Alert Label" textAlignment="center" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Hvr-Qt-VET">
+            <objects>
+                <controller id="lpE-FY-2gN" customClass="InterfaceController" customModule="KnightWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="40.5" alignment="center" textAlignment="center" numberOfLines="2" id="hdr-qq-Ufr">
+                            <variation key="device=watch42mm" width="156"/>
+                        </label>
+                        <label width="136" height="26.5" alignment="center" textAlignment="center" id="SMG-64-q23">
+                            <variation key="device=watch42mm" height="29.5" width="156"/>
+                        </label>
+                        <label width="136" height="35.5" alignment="center" textAlignment="center" numberOfLines="2" id="OAB-5e-3mL">
+                            <variation key="device=watch42mm" height="30.5" width="156"/>
+                        </label>
+                        <label width="136" height="33" alignment="center" textAlignment="center" id="iEw-VK-bw7">
+                            <variation key="device=watch42mm" height="28" width="156"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="dayLabel" destination="hdr-qq-Ufr" id="Ywh-vt-UEf"/>
+                        <outlet property="nextLabel" destination="iEw-VK-bw7" id="lNb-ei-6rL"/>
+                        <outlet property="periodLabel" destination="SMG-64-q23" id="0k7-zf-MOD"/>
+                        <outlet property="remainingLabel" destination="OAB-5e-3mL" id="bu0-ge-HJO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="234" y="311"/>
+        </scene>
+    </scenes>
+</document>

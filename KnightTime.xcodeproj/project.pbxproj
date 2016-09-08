@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06B90A521C7E9094002F4312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90A511C7E9094002F4312 /* AppDelegate.swift */; };
-		06B90A541C7E9094002F4312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90A531C7E9094002F4312 /* ViewController.swift */; };
-		06B90A571C7E9094002F4312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B90A551C7E9094002F4312 /* Main.storyboard */; };
-		06B90A591C7E9094002F4312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B90A581C7E9094002F4312 /* Assets.xcassets */; };
+		0659B2D51CD281AB00D9F8D9 /* Main (iPad).storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0659B2D41CD281AB00D9F8D9 /* Main (iPad).storyboard */; };
+		0694327E1C85FC8B00A75029 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0694327D1C85FC8B00A75029 /* Settings.swift */; };
+		06A09B531C84F57B002B0B3E /* MondaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A09B521C84F57B002B0B3E /* MondaySchedule.swift */; };
+		06A09B551C851614002B0B3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A09B541C851614002B0B3E /* ViewController.swift */; };
+		06A09B571C85173D002B0B3E /* TuesdaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A09B561C85173D002B0B3E /* TuesdaySchedule.swift */; };
+		06A09B591C85174A002B0B3E /* WednesdaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A09B581C85174A002B0B3E /* WednesdaySchedule.swift */; };
 		06B90A5C1C7E9094002F4312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B90A5A1C7E9094002F4312 /* LaunchScreen.storyboard */; };
 		06B90A671C7E9094002F4312 /* KnightTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90A661C7E9094002F4312 /* KnightTimeTests.swift */; };
 		06B90A721C7E9094002F4312 /* KnightTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90A711C7E9094002F4312 /* KnightTimeUITests.swift */; };
+		06B90A8E1C7E90C0002F4312 /* KnightWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 06B90A8D1C7E90C0002F4312 /* KnightWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		06B90A9B1C7E90C1002F4312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B90A9A1C7E90C1002F4312 /* Assets.xcassets */; };
+		06B90A9F1C7E90C1002F4312 /* KnightWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 06B90A811C7E90C0002F4312 /* KnightWatch.app */; };
+		06B90AAB1C7E90FF002F4312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90AA91C7E90FF002F4312 /* AppDelegate.swift */; };
+		06B90AAE1C7E9108002F4312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B90AAD1C7E9108002F4312 /* Main.storyboard */; };
+		06B90AB01C7E911A002F4312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B90AAF1C7E911A002F4312 /* Assets.xcassets */; };
+		06B90AB21C7E9139002F4312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B90AB11C7E9139002F4312 /* Assets.xcassets */; };
+		06B90AB41C7E914E002F4312 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B90AB31C7E914E002F4312 /* Interface.storyboard */; };
+		06B90AB91C7E9162002F4312 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90AB61C7E9162002F4312 /* ExtensionDelegate.swift */; };
+		06B90ABA1C7E9162002F4312 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90AB71C7E9162002F4312 /* InterfaceController.swift */; };
+		06B90ABB1C7E9162002F4312 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B90AB81C7E9162002F4312 /* NotificationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,14 +44,56 @@
 			remoteGlobalIDString = 06B90A4D1C7E9094002F4312;
 			remoteInfo = KnightTime;
 		};
+		06B90A8F1C7E90C0002F4312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B90A461C7E9094002F4312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B90A8C1C7E90C0002F4312;
+			remoteInfo = "KnightWatch Extension";
+		};
+		06B90A9D1C7E90C1002F4312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B90A461C7E9094002F4312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06B90A801C7E90C0002F4312;
+			remoteInfo = KnightWatch;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		06B90AA31C7E90C1002F4312 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				06B90A8E1C7E90C0002F4312 /* KnightWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B90AA71C7E90C1002F4312 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				06B90A9F1C7E90C1002F4312 /* KnightWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		063137201C88B3A800B1AD17 /* KnightTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KnightTime.entitlements; sourceTree = "<group>"; };
+		0659B2D41CD281AB00D9F8D9 /* Main (iPad).storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Main (iPad).storyboard"; sourceTree = "<group>"; };
+		0694327D1C85FC8B00A75029 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		06A09B521C84F57B002B0B3E /* MondaySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondaySchedule.swift; sourceTree = "<group>"; };
+		06A09B541C851614002B0B3E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06A09B561C85173D002B0B3E /* TuesdaySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuesdaySchedule.swift; sourceTree = "<group>"; };
+		06A09B581C85174A002B0B3E /* WednesdaySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WednesdaySchedule.swift; sourceTree = "<group>"; };
 		06B90A4E1C7E9094002F4312 /* KnightTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06B90A511C7E9094002F4312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06B90A531C7E9094002F4312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		06B90A561C7E9094002F4312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		06B90A581C7E9094002F4312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06B90A5B1C7E9094002F4312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06B90A5D1C7E9094002F4312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06B90A621C7E9094002F4312 /* KnightTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +102,22 @@
 		06B90A6D1C7E9094002F4312 /* KnightTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B90A711C7E9094002F4312 /* KnightTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnightTimeUITests.swift; sourceTree = "<group>"; };
 		06B90A731C7E9094002F4312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B90A811C7E90C0002F4312 /* KnightWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B90A881C7E90C0002F4312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B90A8D1C7E90C0002F4312 /* KnightWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KnightWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B90A931C7E90C0002F4312 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		06B90A9A1C7E90C1002F4312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06B90A9C1C7E90C1002F4312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B90AA81C7E90FD002F4312 /* KnightTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnightTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		06B90AA91C7E90FF002F4312 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06B90AAD1C7E9108002F4312 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		06B90AAF1C7E911A002F4312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06B90AB11C7E9139002F4312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06B90AB31C7E914E002F4312 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		06B90AB51C7E9161002F4312 /* KnightWatch Extension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KnightWatch Extension-Bridging-Header.h"; sourceTree = "<group>"; };
+		06B90AB61C7E9162002F4312 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		06B90AB71C7E9162002F4312 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		06B90AB81C7E9162002F4312 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +142,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06B90A8A1C7E90C0002F4312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +158,8 @@
 				06B90A501C7E9094002F4312 /* KnightTime */,
 				06B90A651C7E9094002F4312 /* KnightTimeTests */,
 				06B90A701C7E9094002F4312 /* KnightTimeUITests */,
+				06B90A821C7E90C0002F4312 /* KnightWatch */,
+				06B90A911C7E90C0002F4312 /* KnightWatch Extension */,
 				06B90A4F1C7E9094002F4312 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +170,8 @@
 				06B90A4E1C7E9094002F4312 /* KnightTime.app */,
 				06B90A621C7E9094002F4312 /* KnightTimeTests.xctest */,
 				06B90A6D1C7E9094002F4312 /* KnightTimeUITests.xctest */,
+				06B90A811C7E90C0002F4312 /* KnightWatch.app */,
+				06B90A8D1C7E90C0002F4312 /* KnightWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +179,19 @@
 		06B90A501C7E9094002F4312 /* KnightTime */ = {
 			isa = PBXGroup;
 			children = (
-				06B90A511C7E9094002F4312 /* AppDelegate.swift */,
-				06B90A531C7E9094002F4312 /* ViewController.swift */,
-				06B90A551C7E9094002F4312 /* Main.storyboard */,
-				06B90A581C7E9094002F4312 /* Assets.xcassets */,
+				063137201C88B3A800B1AD17 /* KnightTime.entitlements */,
+				06B90AA91C7E90FF002F4312 /* AppDelegate.swift */,
+				06A09B541C851614002B0B3E /* ViewController.swift */,
+				06A09B521C84F57B002B0B3E /* MondaySchedule.swift */,
+				06A09B561C85173D002B0B3E /* TuesdaySchedule.swift */,
+				06A09B581C85174A002B0B3E /* WednesdaySchedule.swift */,
+				0694327D1C85FC8B00A75029 /* Settings.swift */,
+				06B90AAD1C7E9108002F4312 /* Main.storyboard */,
+				0659B2D41CD281AB00D9F8D9 /* Main (iPad).storyboard */,
+				06B90AAF1C7E911A002F4312 /* Assets.xcassets */,
 				06B90A5A1C7E9094002F4312 /* LaunchScreen.storyboard */,
 				06B90A5D1C7E9094002F4312 /* Info.plist */,
+				06B90AA81C7E90FD002F4312 /* KnightTime-Bridging-Header.h */,
 			);
 			path = KnightTime;
 			sourceTree = "<group>";
@@ -125,6 +214,38 @@
 			path = KnightTimeUITests;
 			sourceTree = "<group>";
 		};
+		06B90A821C7E90C0002F4312 /* KnightWatch */ = {
+			isa = PBXGroup;
+			children = (
+				06B90AB31C7E914E002F4312 /* Interface.storyboard */,
+				06B90AB11C7E9139002F4312 /* Assets.xcassets */,
+				06B90A881C7E90C0002F4312 /* Info.plist */,
+			);
+			path = KnightWatch;
+			sourceTree = "<group>";
+		};
+		06B90A911C7E90C0002F4312 /* KnightWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				06B90AB71C7E9162002F4312 /* InterfaceController.swift */,
+				06B90AB61C7E9162002F4312 /* ExtensionDelegate.swift */,
+				06B90AB81C7E9162002F4312 /* NotificationController.swift */,
+				06B90A9A1C7E90C1002F4312 /* Assets.xcassets */,
+				06B90A9C1C7E90C1002F4312 /* Info.plist */,
+				06B90A921C7E90C0002F4312 /* Supporting Files */,
+				06B90AB51C7E9161002F4312 /* KnightWatch Extension-Bridging-Header.h */,
+			);
+			path = "KnightWatch Extension";
+			sourceTree = "<group>";
+		};
+		06B90A921C7E90C0002F4312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06B90A931C7E90C0002F4312 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +256,12 @@
 				06B90A4A1C7E9094002F4312 /* Sources */,
 				06B90A4B1C7E9094002F4312 /* Frameworks */,
 				06B90A4C1C7E9094002F4312 /* Resources */,
+				06B90AA71C7E90C1002F4312 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				06B90A9E1C7E90C1002F4312 /* PBXTargetDependency */,
 			);
 			name = KnightTime;
 			productName = KnightTime;
@@ -181,6 +304,40 @@
 			productReference = 06B90A6D1C7E9094002F4312 /* KnightTimeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		06B90A801C7E90C0002F4312 /* KnightWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B90AA41C7E90C1002F4312 /* Build configuration list for PBXNativeTarget "KnightWatch" */;
+			buildPhases = (
+				06B90A7F1C7E90C0002F4312 /* Resources */,
+				06B90AA31C7E90C1002F4312 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06B90A901C7E90C0002F4312 /* PBXTargetDependency */,
+			);
+			name = KnightWatch;
+			productName = KnightWatch;
+			productReference = 06B90A811C7E90C0002F4312 /* KnightWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		06B90A8C1C7E90C0002F4312 /* KnightWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B90AA01C7E90C1002F4312 /* Build configuration list for PBXNativeTarget "KnightWatch Extension" */;
+			buildPhases = (
+				06B90A891C7E90C0002F4312 /* Sources */,
+				06B90A8A1C7E90C0002F4312 /* Frameworks */,
+				06B90A8B1C7E90C0002F4312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KnightWatch Extension";
+			productName = "KnightWatch Extension";
+			productReference = 06B90A8D1C7E90C0002F4312 /* KnightWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +350,12 @@
 				TargetAttributes = {
 					06B90A4D1C7E9094002F4312 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6ZDK442TU6;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					06B90A611C7E9094002F4312 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -201,6 +364,14 @@
 					06B90A6C1C7E9094002F4312 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 06B90A4D1C7E9094002F4312;
+					};
+					06B90A801C7E90C0002F4312 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6ZDK442TU6;
+					};
+					06B90A8C1C7E90C0002F4312 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6ZDK442TU6;
 					};
 				};
 			};
@@ -220,6 +391,8 @@
 				06B90A4D1C7E9094002F4312 /* KnightTime */,
 				06B90A611C7E9094002F4312 /* KnightTimeTests */,
 				06B90A6C1C7E9094002F4312 /* KnightTimeUITests */,
+				06B90A801C7E90C0002F4312 /* KnightWatch */,
+				06B90A8C1C7E90C0002F4312 /* KnightWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -229,9 +402,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B90AAE1C7E9108002F4312 /* Main.storyboard in Resources */,
+				0659B2D51CD281AB00D9F8D9 /* Main (iPad).storyboard in Resources */,
+				06B90AB01C7E911A002F4312 /* Assets.xcassets in Resources */,
 				06B90A5C1C7E9094002F4312 /* LaunchScreen.storyboard in Resources */,
-				06B90A591C7E9094002F4312 /* Assets.xcassets in Resources */,
-				06B90A571C7E9094002F4312 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +423,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06B90A7F1C7E90C0002F4312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B90AB41C7E914E002F4312 /* Interface.storyboard in Resources */,
+				06B90AB21C7E9139002F4312 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B90A8B1C7E90C0002F4312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B90A9B1C7E90C1002F4312 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,8 +447,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06B90A541C7E9094002F4312 /* ViewController.swift in Sources */,
-				06B90A521C7E9094002F4312 /* AppDelegate.swift in Sources */,
+				0694327E1C85FC8B00A75029 /* Settings.swift in Sources */,
+				06A09B571C85173D002B0B3E /* TuesdaySchedule.swift in Sources */,
+				06A09B551C851614002B0B3E /* ViewController.swift in Sources */,
+				06A09B591C85174A002B0B3E /* WednesdaySchedule.swift in Sources */,
+				06A09B531C84F57B002B0B3E /* MondaySchedule.swift in Sources */,
+				06B90AAB1C7E90FF002F4312 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +472,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		06B90A891C7E90C0002F4312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B90ABB1C7E9162002F4312 /* NotificationController.swift in Sources */,
+				06B90AB91C7E9162002F4312 /* ExtensionDelegate.swift in Sources */,
+				06B90ABA1C7E9162002F4312 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -290,17 +495,19 @@
 			target = 06B90A4D1C7E9094002F4312 /* KnightTime */;
 			targetProxy = 06B90A6E1C7E9094002F4312 /* PBXContainerItemProxy */;
 		};
+		06B90A901C7E90C0002F4312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B90A8C1C7E90C0002F4312 /* KnightWatch Extension */;
+			targetProxy = 06B90A8F1C7E90C0002F4312 /* PBXContainerItemProxy */;
+		};
+		06B90A9E1C7E90C1002F4312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06B90A801C7E90C0002F4312 /* KnightWatch */;
+			targetProxy = 06B90A9D1C7E90C1002F4312 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06B90A551C7E9094002F4312 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06B90A561C7E9094002F4312 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06B90A5A1C7E9094002F4312 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,7 +560,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,7 +597,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -399,10 +606,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KnightTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehshouston.KnightTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KnightTime/KnightTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -410,10 +624,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KnightTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ehshouston.KnightTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KnightTime/KnightTime-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -465,6 +685,83 @@
 			};
 			name = Release;
 		};
+		06B90AA11C7E90C1002F4312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "KnightWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehshouston.KnightTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "KnightWatch Extension/KnightWatch Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		06B90AA21C7E90C1002F4312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "KnightWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehshouston.KnightTime.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "KnightWatch Extension/KnightWatch Extension-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		06B90AA51C7E90C1002F4312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = KnightWatch_Extension;
+				INFOPLIST_FILE = KnightWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehshouston.KnightTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		06B90AA61C7E90C1002F4312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = KnightWatch_Extension;
+				INFOPLIST_FILE = KnightWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ehshouston.KnightTime.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -484,6 +781,7 @@
 				06B90A781C7E9094002F4312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06B90A791C7E9094002F4312 /* Build configuration list for PBXNativeTarget "KnightTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +790,7 @@
 				06B90A7B1C7E9094002F4312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06B90A7C1C7E9094002F4312 /* Build configuration list for PBXNativeTarget "KnightTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +799,25 @@
 				06B90A7E1C7E9094002F4312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B90AA01C7E90C1002F4312 /* Build configuration list for PBXNativeTarget "KnightWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B90AA11C7E90C1002F4312 /* Debug */,
+				06B90AA21C7E90C1002F4312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B90AA41C7E90C1002F4312 /* Build configuration list for PBXNativeTarget "KnightWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B90AA51C7E90C1002F4312 /* Debug */,
+				06B90AA61C7E90C1002F4312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
