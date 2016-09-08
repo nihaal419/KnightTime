@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0720"
+   version = "2.0">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "06B90A801C7E90C0002F4312"
+               BuildableName = "KnightWatch.app"
+               BlueprintName = "KnightWatch"
+               ReferencedContainer = "container:KnightTime.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "06B90A4D1C7E9094002F4312"
+               BuildableName = "KnightTime.app"
+               BlueprintName = "KnightTime"
+               ReferencedContainer = "container:KnightTime.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "06B90A8C1C7E90C0002F4312"
+               BuildableName = "KnightWatch Extension.appex"
+               BlueprintName = "KnightWatch Extension"
+               ReferencedContainer = "container:KnightTime.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "06B90A801C7E90C0002F4312"
+            BuildableName = "KnightWatch.app"
+            BlueprintName = "KnightWatch"
+            ReferencedContainer = "container:KnightTime.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "KnightWatch Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/KnightTime">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "06B90A801C7E90C0002F4312"
+            BuildableName = "KnightWatch.app"
+            BlueprintName = "KnightWatch"
+            ReferencedContainer = "container:KnightTime.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "06B90A801C7E90C0002F4312"
+            BuildableName = "KnightWatch.app"
+            BlueprintName = "KnightWatch"
+            ReferencedContainer = "container:KnightTime.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "KnightWatch Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/KnightTime">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "06B90A801C7E90C0002F4312"
+            BuildableName = "KnightWatch.app"
+            BlueprintName = "KnightWatch"
+            ReferencedContainer = "container:KnightTime.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "06B90A801C7E90C0002F4312"
+            BuildableName = "KnightWatch.app"
+            BlueprintName = "KnightWatch"
+            ReferencedContainer = "container:KnightTime.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
