@@ -40,9 +40,10 @@ struct GetScheduleRequest {
         default:
             filename = today.rawValue.lowercased()
         }
-        filename += ".json"
         
-        let fileUrl = URL(filePath: filename)
+        guard let fileUrl = Bundle.main.url(forResource: filename, withExtension: "json") else {
+            throw APIError.noData
+        }
         let data = try Data(contentsOf: fileUrl)
         let scheduleData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
         
