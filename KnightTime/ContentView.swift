@@ -9,13 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationSplitView {
+            ScrollView {
+                Text("Schedule")
+                
+                Text("This Week")
+                    .font(.caption)
+                
+                HStack {
+                    VStack {
+                        Text("Monday")
+                        Text("Full Day 1")
+                    }
+                    
+                    Spacer()
+                    
+                    Text("12")
+                }
+            }
+        } detail: {
+            ScrollView {
+                HStack {
+                    VStack {
+                        Text("Monday")
+                            .font(.title)
+                        Text("June 29 - Full Day - Group A")
+                    }
+                }
+            }
+            .navigationTitle("Test")
         }
-        .padding()
+
+        
+//        VStack {
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundStyle(.tint)
+//            Text("Hello, world!")
+//        }
+//        .padding()
     }
 }
 
