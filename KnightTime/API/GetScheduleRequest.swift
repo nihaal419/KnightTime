@@ -35,10 +35,10 @@ struct GetScheduleRequest {
         var filename: String
         
         switch today {
-        case .Sunday, .Saturday:
+        case .sunday, .saturday:
             return .weekend
         default:
-            filename = today.rawValue.lowercased()
+            filename = today.rawValue
         }
         
         guard let fileUrl = Bundle.main.url(forResource: filename, withExtension: "json") else {

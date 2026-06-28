@@ -8,14 +8,14 @@
 import Foundation
 
 extension Date {
-    func dayOfTheWeek() -> DayOfTheWeek? {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE"
-        let dayOfTheWeek = formatter.string(from: self)
-        return DayOfTheWeek(rawValue: dayOfTheWeek)
+    func dayOfTheWeek(calendar: Calendar = .current) -> DayOfTheWeek? {
+        // `.weekday` is 1-based starting at Sunday, matching DayOfTheWeek's declaration order.
+        let weekday = calendar.component(.weekday, from: self)
+        guard (1...7).contains(weekday) else { return nil }
+        return DayOfTheWeek.allCases[weekday - 1]
     }
-    
+
     enum DayOfTheWeek: String, CaseIterable {
-        case Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
+        case sunday, monday, tuesday, wednesday, thursday, friday, saturday
     }
 }
