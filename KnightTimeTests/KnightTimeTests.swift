@@ -27,4 +27,22 @@ struct KnightTimeTests {
         let result = try request.perform(for: sunday)
         #expect(result == .weekend)
     }
+    
+    @Test func testScheduleDecoding() async throws {
+        let tuple = Date.DayOfTheWeek.allCases.compactMap { dow in
+            let filename = dow.rawValue
+            return (dow, Bundle.main.url(forResource: filename, withExtension: "json"))
+        }
+        
+        try await MainActor.run {
+            for (dow, url) in tuple {
+                guard [.sunday, .saturday].contains(dow) == false else { return }
+                
+                let data = try Data(contentsOf: url!)
+                let result = try JSONDecoder().decode(Schedule.self, from: data)
+                #expect(result.periods.isEmpty == false)
+                #expect(result.dayOfTheWeek == dow)
+            }
+        }
+    }
 }

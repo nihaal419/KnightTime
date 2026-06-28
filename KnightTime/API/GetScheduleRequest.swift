@@ -10,17 +10,14 @@ import Foundation
 struct GetScheduleRequest {
     enum Result: Equatable {
         case weekend
-        case weekday(schedule: [String: Any])
+        case weekday(schedule: Schedule)
         
         static func == (lhs: Self, rhs: Self) -> Bool {
             switch (lhs, rhs) {
             case (.weekend, .weekend):
                 return true
             case (.weekday(let lhsSchedule), .weekday(let rhsSchedule)):
-                let lhDay = lhsSchedule["dayOfWeek"] as? String
-                let rhDay = rhsSchedule["dayOfWeek"] as? String
-                
-                return lhDay == rhDay
+                return lhsSchedule == rhsSchedule
             default:
                 return false
             }
@@ -45,12 +42,8 @@ struct GetScheduleRequest {
             throw APIError.noData
         }
         let data = try Data(contentsOf: fileUrl)
-        let scheduleData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+        let schedule = try JSONDecoder().decode(Schedule.self, from: data)
         
-        guard let scheduleData else {
-            throw APIError.noData
-        }
-        
-        return .weekday(schedule: scheduleData)
+        return .weekday(schedule: schedule)
     }
 }
