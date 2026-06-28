@@ -1,0 +1,17 @@
+{
+    "scheduleName": "Block Day C",
+    "dayOfWeek": "Thursday",
+    "periods": [
+        { "name": "Class 6",        "type": "class",    "start": "08:00", "end": "09:00", "group": null },
+        { "name": "Chapel / Break", "type": "chapel",   "start": "09:05", "end": "09:45", "group": null },
+        { "name": "Class 7",        "type": "class",    "start": "09:50", "end": "10:50", "group": null },
+        { "name": "Advisory",       "type": "advisory", "start": "10:55", "end": "11:15", "group": null },
+        { "name": "Lunch A",        "type": "lunch",    "start": "11:20", "end": "11:55", "group": "A" },
+        { "name": "Class 1",        "type": "class",    "start": "11:20", "end": "12:20", "group": "B" },
+        { "name": "Class 1",        "type": "class",    "start": "12:00", "end": "13:00", "group": "A" },
+        { "name": "Lunch B",        "type": "lunch",    "start": "12:25", "end": "13:00", "group": "B" },
+        { "name": "Class 2",        "type": "class",    "start": "13:05", "end": "14:05", "group": null },
+        { "name": "Class 3",        "type": "class",    "start": "14:10", "end": "15:10", "group": null },
+        { "name": "Tutorial",       "type": "tutorial", "start": "15:15", "end": "15:45", "group": null }
+    ]
+}

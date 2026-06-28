@@ -32,6 +32,11 @@
 			path = KnightTimeTests;
 			sourceTree = "<group>";
 		};
+		068E57052FF0E553005DCF9F /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,7 @@
 		062180E42FEF784B00CB58BE = {
 			isa = PBXGroup;
 			children = (
+				068E57052FF0E553005DCF9F /* Shared */,
 				062180EF2FEF784C00CB58BE /* KnightTime */,
 				062180FD2FEF784D00CB58BE /* KnightTimeTests */,
 				062180EE2FEF784C00CB58BE /* Products */,
@@ -87,6 +93,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				062180EF2FEF784C00CB58BE /* KnightTime */,
+				068E57052FF0E553005DCF9F /* Shared */,
 			);
 			name = KnightTime;
 			packageProductDependencies = (
