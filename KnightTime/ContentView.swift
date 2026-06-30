@@ -8,46 +8,45 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var schedule: Schedule?
+    @State private var isWeekend: Bool = false
+    @State private var isLoading: Bool = true
+    
     var body: some View {
-        NavigationSplitView {
-            ScrollView {
-                Text("Schedule")
-                
-                Text("This Week")
-                    .font(.caption)
-                
-                HStack {
-                    VStack {
-                        Text("Monday")
-                        Text("Full Day 1")
+        NavigationStack {
+            VStack {
+                if isLoading {
+                    Text("Loading...")
+                } else if isWeekend {
+                    Text("It's a weekend")
+                } else if let schedule {
+                    ForEach(schedule.periods) { period in
+                        Text(period.name)
                     }
-                    
-                    Spacer()
-                    
-                    Text("12")
+                } else {
+                    Text("I don't know how you got here, you must be a hacker.")
                 }
             }
-        } detail: {
-            ScrollView {
-                HStack {
-                    VStack {
-                        Text("Monday")
-                            .font(.title)
-                        Text("June 29 - Full Day - Group A")
+            .onAppear {
+                Task { @MainActor in
+                    do {
+                        let request = GetScheduleRequest()
+                        let result = try request.perform()
+                        
+                        switch result {
+                        case .weekend:
+                            self.isWeekend = true
+                        case .weekday(let schedule):
+                            self.schedule = schedule
+                        }
+                        
+                        isLoading = false
+                    } catch {
+                        debugPrint(error.localizedDescription)
                     }
                 }
             }
-            .navigationTitle("Test")
         }
-
-        
-//        VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
-//        }
-//        .padding()
     }
 }
 
