@@ -43,10 +43,16 @@ extension Period {
         
         let start = try container.decode(String.self, forKey: .start)
         let end = try container.decode(String.self, forKey: .end)
-        
-        self.start = formatter.date(from: start)
-        self.end = formatter.date(from: end)
-    }
+
+        guard let startDate = formatter.date(from: start) else {
+            throw DecodingError.dataCorruptedError(forKey: .start, in: container, debugDescription: "Invalid time format: \(start)")
+        }
+        guard let endDate = formatter.date(from: end) else {
+            throw DecodingError.dataCorruptedError(forKey: .end, in: container, debugDescription: "Invalid time format: \(end)")
+        }
+
+        self.start = startDate
+        self.end = endDate
 }
 
 enum PeriodType: String, Decodable, Equatable {
