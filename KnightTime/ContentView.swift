@@ -18,18 +18,27 @@ class ScheduleViewModel {
         isWeekend = nil
     }
     
-    func fetchSchedule(for day: Date.DayOfTheWeek) throws {
-        defer { isLoading = false }
+    @MainActor
+    func fetchSchedule(for day: Date.DayOfTheWeek) async {
         isLoading = true
-        
-        let request = GetScheduleRequest()
-        let result = try request.perform(for: day)
-        
-        switch result {
-        case .weekend:
-            self.isWeekend = true
-        case .weekday(let schedule):
-            self.selectedSchedule = schedule
+        defer { isLoading = false }
+
+        reset()
+
+        do {
+            let result = try await Task.detached(priority: .userInitiated) {
+                try GetScheduleRequest().perform(for: day)
+            }.value
+
+            switch result {
+            case .weekend:
+                isWeekend = true
+            case .weekday(let schedule):
+                isWeekend = false
+                selectedSchedule = schedule
+            }
+        } catch {
+            debugPrint(error.localizedDescription)
         }
     }
 }
