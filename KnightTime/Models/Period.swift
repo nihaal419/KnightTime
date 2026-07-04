@@ -39,6 +39,7 @@ extension Period {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "HH:mm"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
         formatter.timeZone = .current
         
         let start = try container.decode(String.self, forKey: .start)

@@ -11,17 +11,6 @@ struct GetScheduleRequest {
     enum Result: Equatable {
         case weekend
         case weekday(schedule: Schedule)
-        
-        static func == (lhs: Self, rhs: Self) -> Bool {
-            switch (lhs, rhs) {
-            case (.weekend, .weekend):
-                return true
-            case (.weekday(let lhsSchedule), .weekday(let rhsSchedule)):
-                return lhsSchedule == rhsSchedule
-            default:
-                return false
-            }
-        }
     }
     
     func perform(for dayOfTheWeek: Date.DayOfTheWeek? = Date().dayOfTheWeek()) throws -> Result {

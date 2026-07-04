@@ -24,6 +24,7 @@ struct KnightTimeTests {
         #expect(result == .weekend)
     }
     
+    @MainActor
     @Test func testScheduleDecoding() async throws {
         let resourcesBundle = Bundle.main
 

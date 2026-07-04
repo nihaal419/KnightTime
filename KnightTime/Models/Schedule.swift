@@ -9,7 +9,7 @@ import Foundation
 
 struct Schedule: Decodable, Equatable {
     let name: String
-    let dayOfTheWeek: Date.DayOfTheWeek?
+    let dayOfTheWeek: Date.DayOfTheWeek
     let periods: [Period]
 }
 

@@ -27,7 +27,7 @@ class ScheduleViewModel {
 
         do {
             let result = try await Task.detached(priority: .userInitiated) {
-                try await GetScheduleRequest().perform(for: day)
+                try GetScheduleRequest().perform(for: day)
             }.value
 
             switch result {
@@ -57,16 +57,18 @@ struct ContentView: View {
             Group {
                 if selectedDay == nil {
                     Text("Make a selection to view a schedule.")
-                } else {
-                    if viewModel.isLoading {
-                        Text("Loading schedule...")
-                    } else if let schedule = viewModel.selectedSchedule {
-                        VStack {
-                            ForEach(schedule.periods) { period in
-                                Text(period.name)
-                            }
+                } else if viewModel.isLoading {
+                    Text("Loading schedule...")
+                } else if let schedule = viewModel.selectedSchedule {
+                    VStack {
+                        ForEach(schedule.periods) { period in
+                            Text(period.name)
                         }
                     }
+                } else if viewModel.isWeekend == true {
+                    Text("Enjoy the weekend!")
+                } else {
+                    Text("Unable to load this schedule.")
                 }
             }
             .navigationTitle("")
