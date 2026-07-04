@@ -27,7 +27,7 @@ class ScheduleViewModel {
 
         do {
             let result = try await Task.detached(priority: .userInitiated) {
-                try GetScheduleRequest().perform(for: day)
+                try await GetScheduleRequest().perform(for: day)
             }.value
 
             switch result {

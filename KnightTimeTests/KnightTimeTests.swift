@@ -25,7 +25,7 @@ struct KnightTimeTests {
     }
     
     @Test func testScheduleDecoding() async throws {
-        let resourcesBundle = Bundle(for: GetScheduleRequest.self)
+        let resourcesBundle = Bundle.main
 
         for dow in Date.DayOfTheWeek.allCases where dow.isWeekday {
             let url = try #require(resourcesBundle.url(forResource: dow.rawValue, withExtension: "json"))
