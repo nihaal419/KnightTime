@@ -97,13 +97,8 @@ struct ContentView: View {
                 }
             }
             .onChange(of: selectedDay) { _, day in
-                do {
-                    if let day {
-                        try viewModel.fetchSchedule(for: day)
-                    }
-                } catch {
-                    debugPrint(error.localizedDescription)
-                }
+                guard let day else { return }
+                Task { await viewModel.fetchSchedule(for: day) }
             }
         }
     }
