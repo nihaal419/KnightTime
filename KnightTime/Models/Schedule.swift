@@ -26,8 +26,10 @@ extension Schedule {
         self.name = try container.decode(String.self, forKey: .name)
         
         let dayOfTheWeekString = try container.decode(String.self, forKey: .dayOfTheWeek)
-        self.dayOfTheWeek = .init(rawValue: dayOfTheWeekString.lowercased())
-        
+        guard let day = Date.DayOfTheWeek(rawValue: dayOfTheWeekString.lowercased()) else {
+            throw DecodingError.dataCorruptedError(forKey: .dayOfTheWeek, in: container, debugDescription: "Invalid dayOfWeek: \(dayOfTheWeekString)")
+        }
+        self.dayOfTheWeek = day
         self.periods = try container.decode([Period].self, forKey: .periods)
     }
 }
