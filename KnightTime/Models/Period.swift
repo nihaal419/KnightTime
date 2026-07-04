@@ -8,7 +8,16 @@
 import Foundation
 
 struct Period: Decodable, Equatable, Identifiable {
-    var id: String { name }
+    var id: String {
+        var id: String = name
+        // Solves issue with repeat IDs where there are repeat class
+        // names but for different perioud groups.
+        if let group = group?.rawValue {
+            id += group
+        }
+        return id
+    }
+    
     let name: String
     let type: PeriodType
     let start: Date?
@@ -46,6 +55,7 @@ enum PeriodType: String, Decodable, Equatable {
     case lunch
     case tutorial
     case advisory
+    case community
 }
 
 enum PeriodGroup: String, Decodable, Equatable {

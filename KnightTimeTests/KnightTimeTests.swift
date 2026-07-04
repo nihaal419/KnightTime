@@ -19,12 +19,8 @@ struct KnightTimeTests {
     }
     
     @Test func testScheduleGetRequest() throws {
-        var calendar = Calendar(identifier: .gregorian)
-        calendar.timeZone = TimeZone(identifier: "America/Chicago")!
-        let sunday = calendar.date(from: DateComponents(year: 2026, month: 6, day: 28))!
-        
         let request = GetScheduleRequest()
-        let result = try request.perform(for: sunday)
+        let result = try request.perform(for: .sunday)
         #expect(result == .weekend)
     }
     

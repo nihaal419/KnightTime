@@ -7,43 +7,93 @@
 
 import SwiftUI
 
+@Observable
+class ScheduleViewModel {
+    var selectedSchedule: Schedule?
+    var isWeekend: Bool?
+    var isLoading: Bool = false
+    
+    private func reset() {
+        selectedSchedule = nil
+        isWeekend = nil
+    }
+    
+    func fetchSchedule(for day: Date.DayOfTheWeek) throws {
+        defer { isLoading = false }
+        isLoading = true
+        
+        let request = GetScheduleRequest()
+        let result = try request.perform(for: day)
+        
+        switch result {
+        case .weekend:
+            self.isWeekend = true
+        case .weekday(let schedule):
+            self.selectedSchedule = schedule
+        }
+    }
+}
+
 struct ContentView: View {
-    @State private var schedule: Schedule?
-    @State private var isWeekend: Bool = false
-    @State private var isLoading: Bool = true
+    @State private var selectedDay: Date.DayOfTheWeek?
+    @State private var viewModel = ScheduleViewModel()
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                if isLoading {
-                    Text("Loading...")
-                } else if isWeekend {
-                    Text("It's a weekend")
-                } else if let schedule {
-                    ForEach(schedule.periods) { period in
-                        Text(period.name)
-                    }
+        NavigationSplitView {
+            List(Date.DayOfTheWeek.weekdays, selection: $selectedDay) {
+                Text($0.rawValue.capitalized).tag($0)
+            }
+            .navigationTitle("Schedules")
+        } detail: {
+            Group {
+                if selectedDay == nil {
+                    Text("Make a selection to view a schedule.")
                 } else {
-                    Text("I don't know how you got here, you must be a hacker.")
+                    if viewModel.isLoading {
+                        Text("Loading schedule...")
+                    } else if let schedule = viewModel.selectedSchedule {
+                        VStack {
+                            ForEach(schedule.periods) { period in
+                                Text(period.name)
+                            }
+                        }
+                    }
+                }
+            }
+            .navigationTitle("")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    if let today = Date().dayOfTheWeek() {
+                        let isWeekday = Date.DayOfTheWeek.weekdays.contains(today)
+                        
+                        Button {
+                            selectedDay = today
+                        } label: {
+                            if isWeekday {
+                                Text("Today is \(today.rawValue.capitalized)")
+                            } else {
+                                Text("Enjoy the weekend!")
+                                    .foregroundStyle(.primary)
+                            }
+                        }
+                        .disabled(isWeekday == false)
+                    }
                 }
             }
             .onAppear {
-                Task { @MainActor in
-                    do {
-                        let request = GetScheduleRequest()
-                        let result = try request.perform()
-                        
-                        switch result {
-                        case .weekend:
-                            self.isWeekend = true
-                        case .weekday(let schedule):
-                            self.schedule = schedule
-                        }
-                        
-                        isLoading = false
-                    } catch {
-                        debugPrint(error.localizedDescription)
+                // Set today as selected day
+                if let today = Date().dayOfTheWeek(),
+                   today.isWeekday {
+                    selectedDay = today
+                }
+            }
+            .onChange(of: selectedDay) { _, day in
+                do {
+                    if let day {
+                        try viewModel.fetchSchedule(for: day)
                     }
+                } catch {
+                    debugPrint(error.localizedDescription)
                 }
             }
         }

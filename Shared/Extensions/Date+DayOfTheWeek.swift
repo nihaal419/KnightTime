@@ -15,7 +15,19 @@ extension Date {
         return DayOfTheWeek.allCases[weekday - 1]
     }
 
-    enum DayOfTheWeek: String, CaseIterable {
+    enum DayOfTheWeek: String, CaseIterable, Identifiable {
         case sunday, monday, tuesday, wednesday, thursday, friday, saturday
+        
+        var id: String { rawValue }
+        
+        var isWeekday: Bool { Self.weekdays.contains(self) }
+        
+        static let weekdays: [DayOfTheWeek] = [
+            .monday,
+            .tuesday,
+            .wednesday,
+            .thursday,
+            .friday
+        ]
     }
 }

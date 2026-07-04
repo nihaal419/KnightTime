@@ -3,13 +3,6 @@
     "dayOfWeek": "Wednesday",
     "periods": [
         {
-            "name": "Faculty Meeting",
-            "type": "faculty_meeting",
-            "start": "07:45",
-            "end": "08:30",
-            "group": null
-        },
-        {
             "name": "Tutorial",
             "type": "tutorial",
             "start": "08:35",

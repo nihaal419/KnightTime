@@ -24,8 +24,8 @@ struct GetScheduleRequest {
         }
     }
     
-    func perform(for day: Date = Date()) throws -> Result {
-        guard let today = day.dayOfTheWeek() else {
+    func perform(for dayOfTheWeek: Date.DayOfTheWeek? = Date().dayOfTheWeek()) throws -> Result {
+        guard let today = dayOfTheWeek else {
             throw APIError.badRequest
         }
         
