@@ -1,0 +1,90 @@
+{
+    "scheduleName": "Full Day 2",
+    "dayOfWeek": "Friday",
+    "periods": [
+        {
+            "name": "Class 5",
+            "type": "class",
+            "start": "08:00",
+            "end": "08:45",
+            "group": null
+        },
+        {
+            "name": "Class 6",
+            "type": "class",
+            "start": "08:50",
+            "end": "09:35",
+            "group": null
+        },
+        {
+            "name": "Chapel / Break",
+            "type": "chapel",
+            "start": "09:40",
+            "end": "10:20",
+            "group": null
+        },
+        {
+            "name": "Class 7",
+            "type": "class",
+            "start": "10:25",
+            "end": "11:10",
+            "group": null
+        },
+        {
+            "name": "Class 1",
+            "type": "class",
+            "start": "11:15",
+            "end": "12:00",
+            "group": null
+        },
+        {
+            "name": "Lunch A",
+            "type": "lunch",
+            "start": "12:05",
+            "end": "12:40",
+            "group": "A"
+        },
+        {
+            "name": "Class 2",
+            "type": "class",
+            "start": "12:05",
+            "end": "12:50",
+            "group": "B"
+        },
+        {
+            "name": "Class 2",
+            "type": "class",
+            "start": "12:45",
+            "end": "13:30",
+            "group": "A"
+        },
+        {
+            "name": "Lunch B",
+            "type": "lunch",
+            "start": "12:55",
+            "end": "13:30",
+            "group": "B"
+        },
+        {
+            "name": "Tutorial",
+            "type": "tutorial",
+            "start": "13:35",
+            "end": "14:05",
+            "group": null
+        },
+        {
+            "name": "Class 3",
+            "type": "class",
+            "start": "14:10",
+            "end": "14:55",
+            "group": null
+        },
+        {
+            "name": "Class 4",
+            "type": "class",
+            "start": "15:00",
+            "end": "15:45",
+            "group": null
+        }
+    ]
+}

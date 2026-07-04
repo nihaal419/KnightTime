@@ -6,13 +6,35 @@
 //
 
 import Testing
+import Foundation
+@testable import KnightTime
 
 struct KnightTimeTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
-        // Swift Testing Documentation
-        // https://developer.apple.com/documentation/testing
+    @Test func testDayOfTheWeek() async throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(identifier: "America/Chicago")!
+        let sunday = calendar.date(from: DateComponents(year: 2026, month: 6, day: 28))!
+        
+        #expect(sunday.dayOfTheWeek(calendar: calendar) == .sunday)
     }
+    
+    @Test func testScheduleGetRequest() throws {
+        let request = GetScheduleRequest()
+        let result = try request.perform(for: .sunday)
+        #expect(result == .weekend)
+    }
+    
+    @MainActor
+    @Test func testScheduleDecoding() async throws {
+        let resourcesBundle = Bundle.main
 
+        for dow in Date.DayOfTheWeek.allCases where dow.isWeekday {
+            let url = try #require(resourcesBundle.url(forResource: dow.rawValue, withExtension: "json"))
+
+            let data = try Data(contentsOf: url)
+            let result = try JSONDecoder().decode(Schedule.self, from: data)
+            #expect(result.periods.isEmpty == false)
+            #expect(result.dayOfTheWeek == dow)
+        }
+    }
 }

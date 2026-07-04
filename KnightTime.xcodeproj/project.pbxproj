@@ -14,19 +14,11 @@
 			remoteGlobalIDString = 062180EC2FEF784B00CB58BE;
 			remoteInfo = KnightTime;
 		};
-		062181052FEF784D00CB58BE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 062180E52FEF784B00CB58BE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 062180EC2FEF784B00CB58BE;
-			remoteInfo = KnightTime;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		062180ED2FEF784C00CB58BE /* KnightTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnightTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062180FA2FEF784D00CB58BE /* KnightTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		062181042FEF784D00CB58BE /* KnightTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnightTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,9 +32,9 @@
 			path = KnightTimeTests;
 			sourceTree = "<group>";
 		};
-		062181072FEF784D00CB58BE /* KnightTimeUITests */ = {
+		068E57052FF0E553005DCF9F /* Shared */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KnightTimeUITests;
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,22 +54,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		062181012FEF784D00CB58BE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		062180E42FEF784B00CB58BE = {
 			isa = PBXGroup;
 			children = (
+				068E57052FF0E553005DCF9F /* Shared */,
 				062180EF2FEF784C00CB58BE /* KnightTime */,
 				062180FD2FEF784D00CB58BE /* KnightTimeTests */,
-				062181072FEF784D00CB58BE /* KnightTimeUITests */,
 				062180EE2FEF784C00CB58BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +72,6 @@
 			children = (
 				062180ED2FEF784C00CB58BE /* KnightTime.app */,
 				062180FA2FEF784D00CB58BE /* KnightTimeTests.xctest */,
-				062181042FEF784D00CB58BE /* KnightTimeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +93,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				062180EF2FEF784C00CB58BE /* KnightTime */,
+				068E57052FF0E553005DCF9F /* Shared */,
 			);
 			name = KnightTime;
 			packageProductDependencies = (
@@ -140,29 +125,6 @@
 			productReference = 062180FA2FEF784D00CB58BE /* KnightTimeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		062181032FEF784D00CB58BE /* KnightTimeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 062181142FEF784D00CB58BE /* Build configuration list for PBXNativeTarget "KnightTimeUITests" */;
-			buildPhases = (
-				062181002FEF784D00CB58BE /* Sources */,
-				062181012FEF784D00CB58BE /* Frameworks */,
-				062181022FEF784D00CB58BE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				062181062FEF784D00CB58BE /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				062181072FEF784D00CB58BE /* KnightTimeUITests */,
-			);
-			name = KnightTimeUITests;
-			packageProductDependencies = (
-			);
-			productName = KnightTimeUITests;
-			productReference = 062181042FEF784D00CB58BE /* KnightTimeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +139,6 @@
 						CreatedOnToolsVersion = 26.6;
 					};
 					062180F92FEF784D00CB58BE = {
-						CreatedOnToolsVersion = 26.6;
-						TestTargetID = 062180EC2FEF784B00CB58BE;
-					};
-					062181032FEF784D00CB58BE = {
 						CreatedOnToolsVersion = 26.6;
 						TestTargetID = 062180EC2FEF784B00CB58BE;
 					};
@@ -202,7 +160,6 @@
 			targets = (
 				062180EC2FEF784B00CB58BE /* KnightTime */,
 				062180F92FEF784D00CB58BE /* KnightTimeTests */,
-				062181032FEF784D00CB58BE /* KnightTimeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +173,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		062180F82FEF784D00CB58BE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		062181022FEF784D00CB58BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +196,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		062181002FEF784D00CB58BE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +203,6 @@
 			isa = PBXTargetDependency;
 			target = 062180EC2FEF784B00CB58BE /* KnightTime */;
 			targetProxy = 062180FB2FEF784D00CB58BE /* PBXContainerItemProxy */;
-		};
-		062181062FEF784D00CB58BE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 062180EC2FEF784B00CB58BE /* KnightTime */;
-			targetProxy = 062181052FEF784D00CB58BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,56 +463,6 @@
 			};
 			name = Release;
 		};
-		062181152FEF784D00CB58BE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4R5A7ZS4F9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rebytalized.KnightTimeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = KnightTime;
-				XROS_DEPLOYMENT_TARGET = 26.5;
-			};
-			name = Debug;
-		};
-		062181162FEF784D00CB58BE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4R5A7ZS4F9;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rebytalized.KnightTimeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = KnightTime;
-				XROS_DEPLOYMENT_TARGET = 26.5;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -601,15 +489,6 @@
 			buildConfigurations = (
 				062181122FEF784D00CB58BE /* Debug */,
 				062181132FEF784D00CB58BE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		062181142FEF784D00CB58BE /* Build configuration list for PBXNativeTarget "KnightTimeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				062181152FEF784D00CB58BE /* Debug */,
-				062181162FEF784D00CB58BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

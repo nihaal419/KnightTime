@@ -1,0 +1,76 @@
+{
+    "scheduleName": "Block Day B",
+    "dayOfWeek": "Wednesday",
+    "periods": [
+        {
+            "name": "Tutorial",
+            "type": "tutorial",
+            "start": "08:35",
+            "end": "09:05",
+            "group": null
+        },
+        {
+            "name": "Class 2",
+            "type": "class",
+            "start": "09:10",
+            "end": "10:10",
+            "group": null
+        },
+        {
+            "name": "Chapel / Break",
+            "type": "chapel",
+            "start": "10:15",
+            "end": "10:55",
+            "group": null
+        },
+        {
+            "name": "Class 3",
+            "type": "class",
+            "start": "11:00",
+            "end": "12:00",
+            "group": null
+        },
+        {
+            "name": "Lunch A",
+            "type": "lunch",
+            "start": "12:05",
+            "end": "12:40",
+            "group": "A"
+        },
+        {
+            "name": "Class 4",
+            "type": "class",
+            "start": "12:05",
+            "end": "13:05",
+            "group": "B"
+        },
+        {
+            "name": "Class 4",
+            "type": "class",
+            "start": "12:45",
+            "end": "13:45",
+            "group": "A"
+        },
+        {
+            "name": "Lunch B",
+            "type": "lunch",
+            "start": "13:10",
+            "end": "13:45",
+            "group": "B"
+        },
+        {
+            "name": "Community Time",
+            "type": "community",
+            "start": "13:50",
+            "end": "14:40",
+            "group": null
+        },
+        {
+            "name": "Class 5",
+            "type": "class",
+            "start": "14:45",
+            "end": "15:45",
+            "group": null
+        }
+    ]
+}
